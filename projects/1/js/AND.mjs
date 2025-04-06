@@ -3,7 +3,7 @@
 import { NAND } from "./NAND.mjs";
 import { dotTst } from "./dottst.mjs";
 
-class AND {
+export class AND {
     constructor(a, b) {
         this.a = a;
         this.b = b;
