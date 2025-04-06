@@ -1,7 +1,6 @@
 /* AND gate */
 
 import { NAND } from "./NAND.mjs";
-import { dotTst } from "./dottst.mjs";
 
 export class AND {
     constructor(a, b) {

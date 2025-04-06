@@ -1,7 +1,5 @@
 /* NAND gate */
 
-import { dotTst } from "./dottst.mjs";
-
 export class NAND {
     constructor(a, b) {
         this.a = a;
