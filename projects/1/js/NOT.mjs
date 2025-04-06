@@ -1,13 +1,10 @@
 /* NOT gate */
 
 import { NAND } from "./NAND.mjs";
-import { dotTst } from "./dottst.mjs";
-
 
 class NOT {
-    constructor(a, b) {
+    constructor(a) {
         this.a = a;
-        this.b = b;
     }
 
     Simulate () {
