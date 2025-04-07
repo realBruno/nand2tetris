@@ -1,6 +1,6 @@
 /* XOR gate */
 
-import { NOT } from "./NOT.mjs";
+import { NAND } from "./NAND.mjs";
 import { AND } from "./AND.mjs";
 import { OR } from "./OR.mjs";
 
@@ -9,12 +9,10 @@ class XOR {
         this.a = a;
         this.b = b;
     }
-
+    
     Simulate () {
-        let notA = new NOT(this.a).Simulate();
-        let notB = new NOT(this.b).Simulate();
-        let andA = new AND(this.a, notB).Simulate();
-        let andB = new AND(notA, this.b).Simulate();
-        return new OR(andA, andB).Simulate();
+        let a = new NAND(this.a, this.b).Simulate();
+        let b = new OR(this.a, this.b).Simulate();
+        return new AND(a, b).Simulate();
     }
 }
