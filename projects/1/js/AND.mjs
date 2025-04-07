@@ -13,5 +13,3 @@ export class AND {
         return new NAND(a, a).Simulate();
     } 
 }
-let and;
-dotTst(and, AND)
