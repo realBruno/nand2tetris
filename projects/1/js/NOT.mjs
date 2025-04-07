@@ -2,7 +2,7 @@
 
 import { NAND } from "./NAND.mjs";
 
-class NOT {
+export class NOT {
     constructor(a) {
         this.a = a;
     }
