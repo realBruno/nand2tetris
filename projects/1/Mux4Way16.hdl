@@ -14,5 +14,8 @@ CHIP Mux4Way16 {
     OUT out[16];
     
     PARTS:
-    //// Replace this comment with your code.
+    Mux(a=a[0..15], b=b[0..15], sel=sel[0], out=out[0..15]);
+    /* Nas portas multi-way, as portas elementarem se conectam de alguma forma */
+
+
 }
